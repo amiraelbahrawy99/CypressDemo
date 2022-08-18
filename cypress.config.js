@@ -3,6 +3,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   chromeWebSecurity: false,
   e2e: {
+    supportFile: false,
     setupNodeEvents(on, config) {
       // implement node event listeners here
       module.exports = (on, config) => {
@@ -16,6 +17,7 @@ module.exports = defineConfig({
 
     },
   },
+
 });
 
 
